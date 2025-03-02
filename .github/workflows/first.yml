@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Game 
-        uses: actions/checkoutt@v3
+        uses: actions/checkouts@v3
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with: 
