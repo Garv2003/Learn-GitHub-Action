@@ -27,10 +27,11 @@ jobs:
       - name: Run Tests
         run: npm test
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get Game 
-        uses: actions/checkouts@v3
+        uses: actions/checkout@v3
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with: 
