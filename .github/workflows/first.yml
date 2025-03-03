@@ -44,7 +44,10 @@
 #         run: echo "Deploying..."
 
 name: React Project 
-on: push
+on: 
+  push:
+      branches:
+        - main
 jobs:
   test:
     runs-on: ubuntu-latest
